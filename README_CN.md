@@ -1,14 +1,18 @@
-<p align="right">
-  <a href="./README.md">English</a> | <strong>简体中文</strong>
+<h1 align="center">Open Satellite Imagery Datasets</h1>
+
+<p align="center">
+一个持续整理和维护开源卫星遥感数据集的项目，汇集数据集简介、应用方向及相关链接。
 </p>
 
-# Open Satellite Imagery Datasets
+<p align="center">
+  <a href="./README.md"><img src="https://img.shields.io/badge/English-555555?style=for-the-badge" alt="Switch to English" height="28"></a>
+  <img src="https://img.shields.io/badge/简体中文-0969da?style=for-the-badge" alt="简体中文（当前语言）" height="28">
+</p>
 
-一个持续整理和维护开源卫星遥感数据集的项目，汇集数据集简介、应用方向及相关链接。
+<p align="center"><strong>31 个数据集与数据系列</strong> &nbsp;·&nbsp; <strong>9 个主题方向</strong></p>
 
-**31 个数据集与数据系列** · **9 个主题方向**
-
-## 目录
+<details>
+<summary><strong>目录</strong></summary>
 
 - [快速索引](#快速索引)
 - [基础模型与大规模预训练](#基础模型与大规模预训练) · 4
@@ -21,41 +25,85 @@
 - [遥感视觉语言](#遥感视觉语言) · 2
 - [开放原始卫星影像](#开放原始卫星影像) · 1
 
+</details>
+
 ## 快速索引
 
-| 数据集 | 主要任务 | 影像来源 | 规模 / 覆盖 |
-| --- | --- | --- | --- |
-| [MajorTOM-Core](#majortom-core) | 大规模预训练 | Sentinel-1/2 | 数百万影像切片 |
-| [SSL4EO-S12](#ssl4eo-s12) | 自监督预训练 | Sentinel-1/2 | 251,079 个地点，四季观测 |
-| [SatlasPretrain](#satlaspretrain) | 多任务预训练 | 卫星 + NAIP 航空影像 | 3.02 亿标签，137 类 |
-| [M3LEO](#m3leo) | 多模态学习 | Sentinel-1/2 等 | 多模态地理配准数据 |
-| [BigEarthNet v2.0](#bigearthnet-v20) | 多标签分类 | Sentinel-1/2 | 549,488 对切片 |
-| [EuroSAT](#eurosat) | 场景分类 | Sentinel-2 | 27,000 张，10 类 |
-| [NWPU-RESISC45](#nwpu-resisc45) | 场景分类 | Google Earth | 31,500 张，45 类 |
-| [SEN12MS](#sen12ms) | 土地覆盖与数据融合 | Sentinel-1/2 | 180,662 组配准样本 |
-| [So2Sat LCZ42](#so2sat-lcz42) | 局地气候区分类 | Sentinel-1/2 | 400,673 个切片，17 类 |
-| [fMoW](#fmow) | 功能地点分类 | 商业卫星影像 | 62 类，多时相观测 |
-| [xView](#xview) | 小目标检测 | WorldView-3 | 超过 100 万目标，60 类 |
-| [DOTA v2.0](#dota-v20) | 旋转目标检测 | 卫星 + 航空影像 | 11,268 张大图，18 类 |
-| [RSOD](#rsod) | 目标检测 | 光学遥感影像 | 976 张，6,950 个目标 |
-| [HRSID](#hrsid) | SAR 舰船检测与分割 | TerraSAR-X、Sentinel-1B 等 | 5,604 张，16,951 个实例 |
-| [xView3-SAR](#xview3-sar) | SAR 舰船检测 | Sentinel-1 | 近 1,000 景 SAR 影像 |
-| [SpaceNet](#spacenet) | 建筑与道路提取 | WorldView、Planet、SAR 等 | 多项挑战数据集 |
-| [OpenEarthMap](#openearthmap) | 土地覆盖分割 | 卫星 + 航空影像 | 5,000 张，44 国，8 类 |
-| [LoveDA](#loveda) | 城乡分割与域适应 | Google Earth | 5,987 张，7 类 |
-| [Sen1Floods11](#sen1floods11) | 洪水分割 | Sentinel-1/2 | 11 次洪水事件 |
-| [xBD / xView2](#xbd--xview2) | 建筑损毁评估 | 灾前 / 灾后卫星影像 | 多种灾害，4 级损毁标签 |
-| [LEVIR-CD](#levir-cd) | 建筑变化检测 | Google Earth | 637 对，31,333 个变化实例 |
-| [S2Looking](#s2looking) | 侧视建筑变化检测 | 高分辨率侧视卫星影像 | 5,000 对双时相影像 |
-| [DynamicEarthNet](#dynamicearthnet) | 时序语义变化分割 | PlanetScope | 75 个区域，每日影像 |
-| [PASTIS-R](#pastis-r) | 作物分类与地块分割 | Sentinel-1/2 | 2,433 个序列，18 种作物 |
-| [Sen4AgriNet](#sen4agrinet) | 作物分类与农田分割 | Sentinel-2 | 多国家、多年份序列 |
-| [Fields of the World](#fields-of-the-world) | 农田边界提取 | 双时相 Sentinel-2 | 覆盖 24 个以上国家 |
-| [AllClear](#allclear) | 云去除与影像重建 | Sentinel-1/2、Landsat 8/9 | 23,742 个区域 |
-| [CloudSEN12](#cloudsen12) | 云与云影分割 | Sentinel-2，配套 Sentinel-1 | 49,400 个切片 |
-| [ChatEarthNet](#chatearthnet) | 图像描述与图文检索 | Sentinel-2 | 163,488 + 10,000 个图文对 |
-| [RS5M](#rs5m) | 视觉语言预训练 | 多来源遥感图像与网络图文 | 约 500 万图文对 |
-| [Maxar Open Data](#maxar-open-data) | 灾害响应与变化分析 | Maxar 商业卫星影像 | 按灾害事件组织 |
+**[基础模型与预训练](#基础模型与大规模预训练) · 4**
+
+| 数据集 | 任务 | 规模 |
+| :--- | :--- | ---: |
+| [**MajorTOM-Core**](#majortom-core) | 大规模预训练 | 数百万切片 |
+| [**SSL4EO-S12**](#ssl4eo-s12) | 自监督学习 | 251,079 个地点 |
+| [**SatlasPretrain**](#satlaspretrain) | 多任务学习 | 3.02 亿标签 |
+| [**M3LEO**](#m3leo) | 多模态学习 | 多模态配准数据 |
+
+**[场景分类](#场景分类与土地覆盖) · 6**
+
+| 数据集 | 任务 | 规模 |
+| :--- | :--- | ---: |
+| [**BigEarthNet v2.0**](#bigearthnet-v20) | 多标签土地覆盖 | 549,488 对切片 |
+| [**EuroSAT**](#eurosat) | 土地利用与覆盖 | 27,000 张 · 10 类 |
+| [**NWPU-RESISC45**](#nwpu-resisc45) | 场景分类 | 31,500 张 · 45 类 |
+| [**SEN12MS**](#sen12ms) | SAR 与光学融合 | 180,662 组样本 |
+| [**So2Sat LCZ42**](#so2sat-lcz42) | 局地气候区 | 400,673 个切片 |
+| [**fMoW**](#fmow) | 功能地点识别 | 62 类 |
+
+**[目标检测](#目标检测与实例分割) · 5**
+
+| 数据集 | 任务 | 规模 |
+| :--- | :--- | ---: |
+| [**xView**](#xview) | 小目标检测 | 超过 100 万目标 |
+| [**DOTA v2.0**](#dota-v20) | 旋转目标检测 | 11,268 张 · 18 类 |
+| [**RSOD**](#rsod) | 光学目标检测 | 976 张 · 4 类 |
+| [**HRSID**](#hrsid) | SAR 舰船与实例掩膜 | 16,951 个实例 |
+| [**xView3-SAR**](#xview3-sar) | SAR 舰船检测 | 近 1,000 景 |
+
+**[语义分割与制图](#语义分割与地物制图) · 4**
+
+| 数据集 | 任务 | 规模 |
+| :--- | :--- | ---: |
+| [**SpaceNet**](#spacenet) | 建筑与道路提取 | 多项挑战 |
+| [**OpenEarthMap**](#openearthmap) | 全球土地覆盖 | 5,000 张 · 44 国 |
+| [**LoveDA**](#loveda) | 城乡域适应 | 5,987 张 · 7 类 |
+| [**Sen1Floods11**](#sen1floods11) | 洪水范围提取 | 11 次事件 |
+
+**[变化检测与灾害](#变化检测与灾害评估) · 4**
+
+| 数据集 | 任务 | 规模 |
+| :--- | :--- | ---: |
+| [**xBD / xView2**](#xbd--xview2) | 建筑损毁评估 | 4 级损毁标签 |
+| [**LEVIR-CD**](#levir-cd) | 建筑变化检测 | 637 对 |
+| [**S2Looking**](#s2looking) | 侧视变化检测 | 5,000 对 |
+| [**DynamicEarthNet**](#dynamicearthnet) | 语义时序变化 | 75 个区域 · 每日影像 |
+
+**[农业与时间序列](#农业与卫星时间序列) · 3**
+
+| 数据集 | 任务 | 规模 |
+| :--- | :--- | ---: |
+| [**PASTIS-R**](#pastis-r) | 作物与地块分割 | 2,433 个序列 |
+| [**Sen4AgriNet**](#sen4agrinet) | 作物时间序列 | 多国家、多年份 |
+| [**Fields of the World**](#fields-of-the-world) | 农田边界提取 | 24 个以上国家 |
+
+**[云检测与去除](#云检测与云去除) · 2**
+
+| 数据集 | 任务 | 规模 |
+| :--- | :--- | ---: |
+| [**AllClear**](#allclear) | 云去除 | 23,742 个区域 |
+| [**CloudSEN12**](#cloudsen12) | 云与云影分割 | 49,400 个切片 |
+
+**[视觉语言](#遥感视觉语言) · 2**
+
+| 数据集 | 任务 | 规模 |
+| :--- | :--- | ---: |
+| [**ChatEarthNet**](#chatearthnet) | 描述与图文检索 | 163,488 + 10,000 对 |
+| [**RS5M**](#rs5m) | 图文预训练 | 约 500 万对 |
+
+**[原始影像](#开放原始卫星影像) · 1**
+
+| 数据集 | 任务 | 覆盖 |
+| :--- | :--- | ---: |
+| [**Maxar Open Data**](#maxar-open-data) | 灾害响应 | 按事件组织 |
 
 ## 基础模型与大规模预训练
 
