@@ -5,8 +5,7 @@ A curated and continuously maintained list of open satellite remote-sensing data
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/English-0969da?style=for-the-badge" alt="English (current language)" height="28">
-  <a href="./README_CN.md"><img src="https://img.shields.io/badge/简体中文-555555?style=for-the-badge" alt="Switch to 简体中文" height="28"></a>
+  <img src="https://img.shields.io/badge/English-555555?style=flat-square&logo=googletranslate&logoColor=white" alt="English (current language)"><a href="./README_CN.md"><img src="https://img.shields.io/badge/简体中文-2ea44f?style=flat-square" alt="Switch to 简体中文"></a>
 </p>
 
 <p align="center"><strong>31 datasets and dataset series</strong> &nbsp;·&nbsp; <strong>9 research areas</strong></p>

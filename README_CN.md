@@ -5,8 +5,7 @@
 </p>
 
 <p align="center">
-  <a href="./README.md"><img src="https://img.shields.io/badge/English-555555?style=for-the-badge" alt="Switch to English" height="28"></a>
-  <img src="https://img.shields.io/badge/简体中文-0969da?style=for-the-badge" alt="简体中文（当前语言）" height="28">
+  <a href="./README.md"><img src="https://img.shields.io/badge/English-2ea44f?style=flat-square&logo=googletranslate&logoColor=white" alt="Switch to English"></a><img src="https://img.shields.io/badge/简体中文-555555?style=flat-square" alt="简体中文（当前语言）">
 </p>
 
 <p align="center"><strong>31 个数据集与数据系列</strong> &nbsp;·&nbsp; <strong>9 个主题方向</strong></p>
