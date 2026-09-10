@@ -28,81 +28,63 @@ A curated and continuously maintained list of open satellite remote-sensing data
 
 ## Quick index
 
-**[Pretraining](#foundation-models-and-large-scale-pretraining) · 4**
+#### [Foundation models and pretraining](#foundation-models-and-large-scale-pretraining) <sup>4 datasets</sup>
 
-| Dataset | Focus | Scale |
-| :--- | :--- | ---: |
-| [**MajorTOM-Core**](#majortom-core) | Large-scale pretraining | Millions of patches |
-| [**SSL4EO-S12**](#ssl4eo-s12) | Self-supervised learning | 251,079 locations |
-| [**SatlasPretrain**](#satlaspretrain) | Multitask learning | 302M labels |
-| [**M3LEO**](#m3leo) | Multimodal learning | Multiple aligned modalities |
+- [**MajorTOM-Core**](#majortom-core) — Large-scale pretraining · Millions of patches
+- [**SSL4EO-S12**](#ssl4eo-s12) — Self-supervised learning · 251,079 locations
+- [**SatlasPretrain**](#satlaspretrain) — Multitask learning · 302M labels
+- [**M3LEO**](#m3leo) — Multimodal learning · Multiple aligned modalities
 
-**[Scene classification](#scene-classification-and-land-cover) · 6**
+#### [Scene classification](#scene-classification-and-land-cover) <sup>6 datasets</sup>
 
-| Dataset | Focus | Scale |
-| :--- | :--- | ---: |
-| [**BigEarthNet v2.0**](#bigearthnet-v20) | Multilabel land cover | 549,488 pairs |
-| [**EuroSAT**](#eurosat) | Land use / land cover | 27,000 images · 10 classes |
-| [**NWPU-RESISC45**](#nwpu-resisc45) | Scene classification | 31,500 images · 45 classes |
-| [**SEN12MS**](#sen12ms) | SAR-optical fusion | 180,662 samples |
-| [**So2Sat LCZ42**](#so2sat-lcz42) | Local climate zones | 400,673 patches |
-| [**fMoW**](#fmow) | Functional sites | 62 classes |
+- [**BigEarthNet v2.0**](#bigearthnet-v20) — Multilabel land cover · 549,488 pairs
+- [**EuroSAT**](#eurosat) — Land use and land cover · 27,000 images, 10 classes
+- [**NWPU-RESISC45**](#nwpu-resisc45) — Scene classification · 31,500 images, 45 classes
+- [**SEN12MS**](#sen12ms) — SAR-optical fusion · 180,662 samples
+- [**So2Sat LCZ42**](#so2sat-lcz42) — Local climate zones · 400,673 patches
+- [**fMoW**](#fmow) — Functional sites · 62 classes
 
-**[Object detection](#object-detection-and-instance-segmentation) · 5**
+#### [Object detection](#object-detection-and-instance-segmentation) <sup>5 datasets</sup>
 
-| Dataset | Focus | Scale |
-| :--- | :--- | ---: |
-| [**xView**](#xview) | Small objects | Over 1M objects |
-| [**DOTA v2.0**](#dota-v20) | Oriented detection | 11,268 images · 18 classes |
-| [**RSOD**](#rsod) | Optical detection | 976 images · 4 classes |
-| [**HRSID**](#hrsid) | SAR ships and masks | 16,951 instances |
-| [**xView3-SAR**](#xview3-sar) | SAR ships | Nearly 1,000 scenes |
+- [**xView**](#xview) — Small-object detection · Over 1M objects
+- [**DOTA v2.0**](#dota-v20) — Oriented detection · 11,268 images, 18 classes
+- [**RSOD**](#rsod) — Optical object detection · 976 images, 4 classes
+- [**HRSID**](#hrsid) — SAR ships and instance masks · 16,951 instances
+- [**xView3-SAR**](#xview3-sar) — SAR ship detection · Nearly 1,000 scenes
 
-**[Segmentation and mapping](#semantic-segmentation-and-mapping) · 4**
+#### [Segmentation and mapping](#semantic-segmentation-and-mapping) <sup>4 datasets</sup>
 
-| Dataset | Focus | Scale |
-| :--- | :--- | ---: |
-| [**SpaceNet**](#spacenet) | Buildings and roads | Multiple challenges |
-| [**OpenEarthMap**](#openearthmap) | Global land cover | 5,000 images · 44 countries |
-| [**LoveDA**](#loveda) | Urban-rural adaptation | 5,987 images · 7 classes |
-| [**Sen1Floods11**](#sen1floods11) | Flood extent | 11 events |
+- [**SpaceNet**](#spacenet) — Buildings and roads · Multiple challenges
+- [**OpenEarthMap**](#openearthmap) — Global land cover · 5,000 images, 44 countries
+- [**LoveDA**](#loveda) — Urban-rural adaptation · 5,987 images, 7 classes
+- [**Sen1Floods11**](#sen1floods11) — Flood extent · 11 events
 
-**[Change and disasters](#change-detection-and-disaster-assessment) · 4**
+#### [Change detection and disasters](#change-detection-and-disaster-assessment) <sup>4 datasets</sup>
 
-| Dataset | Focus | Scale |
-| :--- | :--- | ---: |
-| [**xBD / xView2**](#xbd--xview2) | Building damage | 4 damage levels |
-| [**LEVIR-CD**](#levir-cd) | Building changes | 637 pairs |
-| [**S2Looking**](#s2looking) | Off-nadir changes | 5,000 pairs |
-| [**DynamicEarthNet**](#dynamicearthnet) | Semantic time series | 75 sites · daily imagery |
+- [**xBD / xView2**](#xbd--xview2) — Building damage · 4 damage levels
+- [**LEVIR-CD**](#levir-cd) — Building changes · 637 pairs
+- [**S2Looking**](#s2looking) — Off-nadir changes · 5,000 pairs
+- [**DynamicEarthNet**](#dynamicearthnet) — Semantic time series · 75 sites, daily imagery
 
-**[Agriculture](#agriculture-and-satellite-time-series) · 3**
+#### [Agriculture and time series](#agriculture-and-satellite-time-series) <sup>3 datasets</sup>
 
-| Dataset | Focus | Scale |
-| :--- | :--- | ---: |
-| [**PASTIS-R**](#pastis-r) | Crops and parcels | 2,433 sequences |
-| [**Sen4AgriNet**](#sen4agrinet) | Crop time series | Multiple countries and years |
-| [**Fields of the World**](#fields-of-the-world) | Field boundaries | More than 24 countries |
+- [**PASTIS-R**](#pastis-r) — Crops and parcels · 2,433 sequences
+- [**Sen4AgriNet**](#sen4agrinet) — Crop time series · Multiple countries and years
+- [**Fields of the World**](#fields-of-the-world) — Field boundaries · More than 24 countries
 
-**[Clouds](#cloud-detection-and-removal) · 2**
+#### [Cloud detection and removal](#cloud-detection-and-removal) <sup>2 datasets</sup>
 
-| Dataset | Focus | Scale |
-| :--- | :--- | ---: |
-| [**AllClear**](#allclear) | Cloud removal | 23,742 regions |
-| [**CloudSEN12**](#cloudsen12) | Clouds and shadows | 49,400 patches |
+- [**AllClear**](#allclear) — Cloud removal · 23,742 regions
+- [**CloudSEN12**](#cloudsen12) — Clouds and shadows · 49,400 patches
 
-**[Vision-language](#remote-sensing-vision-language-data) · 2**
+#### [Vision-language](#remote-sensing-vision-language-data) <sup>2 datasets</sup>
 
-| Dataset | Focus | Scale |
-| :--- | :--- | ---: |
-| [**ChatEarthNet**](#chatearthnet) | Captioning and retrieval | 163,488 + 10,000 pairs |
-| [**RS5M**](#rs5m) | Image-text pretraining | About 5M pairs |
+- [**ChatEarthNet**](#chatearthnet) — Captioning and retrieval · 163,488 + 10,000 pairs
+- [**RS5M**](#rs5m) — Image-text pretraining · About 5M pairs
 
-**[Raw imagery](#open-raw-satellite-imagery) · 1**
+#### [Open raw imagery](#open-raw-satellite-imagery) <sup>1 dataset</sup>
 
-| Dataset | Focus | Coverage |
-| :--- | :--- | ---: |
-| [**Maxar Open Data**](#maxar-open-data) | Disaster response | Event-based collections |
+- [**Maxar Open Data**](#maxar-open-data) — Disaster response · Event-based collections
 
 ## Foundation models and large-scale pretraining
 
