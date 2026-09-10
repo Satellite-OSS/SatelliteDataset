@@ -5,8 +5,10 @@
 </p>
 
 <p align="center">
-  <a href="./README.md"><img src="https://img.shields.io/badge/English-2ea44f?style=flat-square&logo=googletranslate&logoColor=white" alt="Switch to English"></a><img src="https://img.shields.io/badge/简体中文-555555?style=flat-square" alt="简体中文（当前语言）">
+  <a href="./README.md"><img src="https://img.shields.io/badge/README-English-0969da?style=flat-square&labelColor=555555" alt="Read in English"></a>
 </p>
+
+<p align="center"><a href="./README.md">English</a> | <strong>中文</strong></p>
 
 <p align="center"><strong>31 个数据集与数据系列</strong> &nbsp;·&nbsp; <strong>9 个主题方向</strong></p>
 
